@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Precise Positioning Example</title>
+  <style>
+    .container {
+      position: relative; 
+      width: 400px;
+      height: 200px;
+      background: lightgray;
+      margin: 50px auto;
+    }
+
+    .box1 {
+      position: absolute; 
+      top: 20px;
+      left: 30px;
+      width: 100px;
+      height: 50px;
+      background: lightblue;
+    }
+
+    .box2 {
+      position: absolute;
+      bottom: 20px;
+      right: 30px;
+      width: 100px;
+      height: 50px;
+      background: lightgreen;
+    }
+
+    .fixed-box {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background: orange;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box1">Top Left</div>
+    <div class="box2">Bottom Right</div>
+  </div>
+
+  <div class="fixed-box">I stay fixed!</div>
+</body>
+</html>
