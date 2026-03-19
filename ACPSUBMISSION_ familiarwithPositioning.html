@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Positioning Demo</title>
+  <style>
+    .container {
+      position: relative;
+      width: 400px;
+      height: 200px;
+      background: lightgray;
+      margin: 50px auto;
+    }
+
+    .relative-box {
+      position: relative;
+      top: 20px;
+      left: 20px;
+      background: lightblue;
+      padding: 10px;
+    }
+
+    .absolute-box {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: lightgreen;
+      padding: 10px;
+    }
+    .fixed-box {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background: orange;
+      padding: 10px;
+    }
+    .sticky-box {
+      position: sticky;
+      top: 0;
+      background: pink;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sticky-box">In CSS, positioning is all about
+     controlling where elements appear on a page. 
+     The position property defines the positioning method, 
+     and then you can use top, right, bottom, and left 
+     to place elements precisely.
+</div>
+  <div class="container">
+    <div class="relative-box">Relative Box</div>
+    <div class="absolute-box">Absolute Box</div>
+  </div>
+  <div class="fixed-box">Fixed Box</div>
+</body>
+</html>
